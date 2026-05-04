@@ -1,54 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyLinks - Tu Nombre</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="styles.css" />
+    <title>Jian Pierre Chujutalli</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
 
 <body>
 
-    <main class="card">
+    <div class="container-page">
+        <!-- Profile -->
+        <div class="profile-card">
+            <div class="avatar-wrap">
+                <img class="avatar" src="foto_perfil.jpg" alt="">
+                <div class="avatar-ring"></div>
+            </div>
+            <div class="name">Jian Pierre Chujutalli</div>
+            <div class="title">Full Stack Developer</div>
+            <p class="bio">Construyo interfaces que <span class="accent-text">escalan</span> y backends que <span
+                    class="accent-text">no fallan</span>. HTML · CSS · JS · Figma.</p>
+            <div class="divider"></div>
+        </div>
 
-        <!-- FOTO DE PERFIL -->
-        <!-- Cambia "Tu Nombre" en el atributo alt -->
-        <img class="avatar" src="https://placehold.co/100x100/6c63ff/ffffff?text=YO" alt="Foto de Tu Nombre" width="100"
-            height="100" />
+        <!-- Social Links -->
+        <div class="section" style="animation-delay:0.15s">
+            <div class="section-label">🔗 &nbsp;Encuéntrame en</div>
+            <div class="links-grid">
 
-        <!-- NOMBRE Y BIO -->
-        <!-- Reemplaza el texto con tu información -->
-        <h1 class="name">Jian Pierre Chujutalli</h1>
-        <p class="bio">Soy estudiante de Enter Tech School. Futuro desarrollador Full Stack.</p>
+                <a href="#" class="btn-outer">
+                    <div class="btn-inner">
+                        <div class="link-icon" style="background:rgba(30,40,70,0.6);">💼</div>
+                        <div class="link-meta"><span class="link-name">LinkedIn</span><span class="link-sub">Perfil
+                                profesional</span></div>
+                    </div>
+                </a>
 
+                <a href="#" class="btn-outer">
+                    <div class="btn-inner">
+                        <div class="link-icon" style="background:rgba(20,30,20,0.6);">🐙</div>
+                        <div class="link-meta"><span class="link-name">GitHub</span><span
+                                class="link-sub">Repositorios</span></div>
+                    </div>
+                </a>
 
-        <!-- ENLACES -->
-        <!-- Cambia el href y el texto de cada enlace -->
-        <!-- Puedes agregar o quitar enlaces según necesites como FACEBOOK,WHATTSAP,etc cualquier medio de contacto -->
-        <nav class="links">
+                <a href="#" class="btn-outer">
+                    <div class="btn-inner">
+                        <div class="link-icon" style="background:rgba(50,20,50,0.6);">🎨</div>
+                        <div class="link-meta"><span class="link-name">Figma</span><span class="link-sub">Diseños
+                                UI</span></div>
+                    </div>
+                </a>
 
-            <a href="https://github.com/jpchujutalli" class="link" target="_blank">
-                GitHub
-            </a>
+                <a href="#" class="btn-outer">
+                    <div class="btn-inner">
+                        <div class="link-icon" style="background:rgba(10,20,40,0.6);">🎵</div>
+                        <div class="link-meta"><span class="link-name">TikTok</span><span class="link-sub">Contenido
+                                dev</span></div>
+                    </div>
+                </a>
 
-            <a href="https://www.gmail.com" class="link" target="_blank">
-                Email
-            </a>
+            </div>
+        </div>
 
+        <!-- Projects -->
+        <div class="section" style="animation-delay:0.25s">
+            <div class="section-label">🚀 &nbsp;Proyectos destacados</div>
+            <div class="projects-grid">
+                <a href="#" class="project-card">
+                    <div class="project-top">
+                        <span class="project-name">Portfolio v2</span>
+                        <span class="project-badge">Live</span>
+                    </div>
+                    <p class="project-desc">Sitio personal con animaciones CSS avanzadas, modo oscuro y arquitectura de
+                        componentes reutilizables.</p>
+                    <div class="project-stack">
+                        <span class="tag">React</span><span class="tag">Tailwind</span><span class="tag">Vite</span>
+                    </div>
+                </a>
+                <a href="#" class="project-card">
+                    <div class="project-top">
+                        <span class="project-name">DevLinks API</span>
+                        <span class="project-badge">Open Source</span>
+                    </div>
+                    <p class="project-desc">API REST para gestión de acortadores de URL con autenticación JWT y panel de
+                        analytics en tiempo real.</p>
+                    <div class="project-stack">
+                        <span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span
+                            class="tag">Docker</span>
+                    </div>
+                </a>
+                <a href="#" class="project-card">
+                    <div class="project-top">
+                        <span class="project-name">UI Kit — Figma</span>
+                        <span class="project-badge">Diseño</span>
+                    </div>
+                    <p class="project-desc">Sistema de diseño con 200+ componentes Figma listos para producción, tokens
+                        de color y tipografía.</p>
+                    <div class="project-stack">
+                        <span class="tag">Figma</span><span class="tag">Design Tokens</span><span class="tag">Auto
+                            Layout</span>
+                    </div>
+                </a>
+            </div>
+        </div>
 
+        <!-- Contact -->
+        <div class="section" style="animation-delay:0.35s">
+            <div class="section-label">📬 &nbsp;Contáctame</div>
+            <div class="contact-row">
 
-        </nav>
+                <a href="mailto:jian@example.com" class="btn-outer">
+                    <div class="btn-inner">
+                        <span class="contact-icon">✉️</span>
+                        Email
+                    </div>
+                </a>
 
-    </main>
+                <a href="https://t.me/jianpchujutalli" class="btn-outer">
+                    <div class="btn-inner">
+                        <span class="contact-icon">✈️</span>
+                        Telegram
+                    </div>
+                </a>
 
+                <a href="https://wa.me/51999999999" class="btn-outer">
+                    <div class="btn-inner">
+                        <span class="contact-icon">💬</span>
+                        WhatsApp
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            Hecho con <span>♥</span> por Jian Pierre &nbsp;·&nbsp; 2025
+        </div>
+
+    </div>
 </body>
-
 </html>
